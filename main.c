@@ -1,21 +1,21 @@
-#include "Isort.h"
+#include "isort.h"
 #include <stdio.h>
 
 int main()
 {
-    int intArray[ArrSize] = {0};
+    int intArray[ARRSIZE] = {0};
     int *p = intArray;
     int counter = 0;
     printf("Enter 50 numbers to sort \n");
-    while (counter < ArrSize)
+    while (counter < ARRSIZE)
     {
         scanf("%d", p++);
         counter++;
     }
-    insertion_sort(intArray, ArrSize);
+    insertion_sort(intArray, ARRSIZE);
     p = intArray;
     counter = 0;
-    while (counter < ArrSize-1)
+    while (counter < ARRSIZE-1)
     {
         printf("%d,",*p);
         p=p+1;

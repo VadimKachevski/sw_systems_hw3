@@ -1,9 +1,9 @@
 #ifndef _ISORT_H_
 #define _ISORT_H_
 
-#define ArrSize 50
+#define ARRSIZE 50
 
-extern int intArray[ArrSize];
+extern int intArray[ARRSIZE];
 
 void shift_element(int* arr,int i);
 void insertion_sort(int* arr,int len);

@@ -1,3 +1,7 @@
 *.o
 *.gch
 run
+*.a
+*.so
+mains
+maind

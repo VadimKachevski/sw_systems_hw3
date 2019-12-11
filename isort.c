@@ -1,4 +1,4 @@
-#include "Isort.h"
+#include "isort.h"
 
 void shift_element(int *arr, int i)
 {
