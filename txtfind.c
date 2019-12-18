@@ -61,12 +61,12 @@ int printLinesWhereStringExsits(char mat[256][256],char s[30],int numberOfLines,
        // printf("%d === ",similar(CurrWord,s));
         if(similar(s,CurrWord) == 1)
         {
-            if(OP == 'b')
+            if(OP == 'a')
             {
             puts(mat[i]);
             break;
             }
-            if(OP == 'a')
+            if(OP == 'b')
             {
                 printf("%s \n",CurrWord);
             }
