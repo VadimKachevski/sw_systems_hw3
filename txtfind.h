@@ -5,8 +5,10 @@
 #define LINE 256
 #define WORD 30
 
-int GetLines(char s[256][256],FILE** fp);
-int printLinesWhereStringExsits(char mat[256][256],char s[30],int numberOfLines,char OP);
+extern char line[LINE][LINE];
+
+int GetLines(char s[LINE][LINE],FILE** fp);
+int printLinesWhereStringExsits(char mat[LINE][LINE],char s[WORD],int numberOfLines,char OP);
 int similar(char* s,char* t);
 
 

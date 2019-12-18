@@ -1,4 +1,4 @@
-cat a
+cat b
 
 is a text file
 looking for a word cat

@@ -30,19 +30,19 @@ int similar(char* s,char* t)
     
 }
 
-int GetLines(char s[256][256],FILE** fp)
+int GetLines(char s[LINE][LINE],FILE** fp)
 {
     int i =0;
-    while(fgets(s[i],256,*fp))
+    while(fgets(s[i],LINE,*fp))
     {
         s[i][strlen(s[i])-1] = '\0';
         i++;
     }
     return i;
 }
-int printLinesWhereStringExsits(char mat[256][256],char s[30],int numberOfLines,char OP)
+int printLinesWhereStringExsits(char mat[LINE][LINE],char s[WORD],int numberOfLines,char OP)
 {
-    char CurrWord[30];
+    char CurrWord[WORD];
     for (int i = 0; i <= numberOfLines; i++)
     {
         int corrIndex = 0; // String index 
@@ -75,7 +75,6 @@ int printLinesWhereStringExsits(char mat[256][256],char s[30],int numberOfLines,
         }
          
     }
-  // printf("%s \n",CurrWord);
     return 0;
 }
 

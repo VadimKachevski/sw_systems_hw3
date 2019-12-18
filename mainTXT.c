@@ -4,11 +4,11 @@
 
 int main()
 {
-  char line[256][256];
+  char line[LINE][LINE];
   FILE *fp = stdin;
   int numberOfLines =0;
  
-  char s[30];
+  char s[WORD];
   char OP;
    numberOfLines = GetLines(line,&fp);
    int i=0;
