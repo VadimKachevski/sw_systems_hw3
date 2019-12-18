@@ -3,7 +3,7 @@
 all: isort txtfind
 
 txtfind: txtfind.o mainTXT.o
-	gcc -Wall -fPIC -o txfind mainTXT.o txtfind.o
+	gcc -Wall -fPIC -o txtfind mainTXT.o txtfind.o
 
 mainTXT.o: mainTXT.c txtfind.h
 	gcc -Wall -c mainTXT.c
@@ -23,4 +23,4 @@ isort.o: isort.c isort.h
 .PHONY: clean all 
 
 clean:
-	rm -f *.o isort txfind
+	rm -f *.o isort txtfind
